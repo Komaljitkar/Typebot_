@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Makes sure container covers full viewport */
+  position: relative;
+}
+
+.Triangle {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 260px;
+  height: 260px;
+}
+
+.Triangle img {
+  width: 100%;
+  height: auto;
+  transform: rotate(21.45deg); /* Proper rotation */
+}
+
+button.back-button {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-container {
+  width: 315px;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  position: sticky;
+}
+
+.login-container form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+}
+
+.login-container form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #1a5fff;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+.login-container form label {
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+  font-size: 18px;
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #1a5fff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.google-button .Gicon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.error-border {
+  border: 1px solid red;
+}

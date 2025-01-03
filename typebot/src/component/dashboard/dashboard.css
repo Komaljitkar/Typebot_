@@ -1,0 +1,353 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: white;
+  height: 65px;
+  border-bottom: 1px solid #FFFFFF29;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.dashboard-container {
+  height: 100vh;
+  transition: background 0.3s ease;
+}
+
+/* Light theme */
+.dashboard-container.light {
+  background: white;
+  color: black;
+}
+
+.dashboard-container.light .workspace {
+  color: black;
+}
+
+.theme-container.light .theme-label {
+  color: black;
+}
+
+.mode.light {
+  background: gray;
+}
+
+.mode.light .mode-dot {
+  left: 3px;
+}
+
+/* Dark theme */
+.dashboard-container.dark {
+  background: linear-gradient(0deg, #121212, #121212),
+    linear-gradient(0deg, #18181b, #18181b);
+  color: white;
+}
+
+.theme-container.dark .theme-label {
+  color: white;
+}
+
+.mode.dark {
+  background: blue;
+}
+
+.mode.dark .mode-dot {
+  left: calc(100% - 18px);
+}
+
+/* Common Button Styles */
+.mode {
+  width: 51px;
+  height: 21px;
+  border-radius: 100px;
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.mode-dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  top: 3px;
+  transition: left 0.3s ease;
+}
+
+.navbar-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 50px;
+}
+
+.navbar-actions .theme-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.navbar-actions .share-button {
+  background: #1A5FFF;
+  color: white;
+  margin-right: 50px;
+  width: 86px;
+  height: 40px;
+}
+
+
+.theme-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.main-content {
+  width: 1,000pxpx;
+  padding: 40px 200px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.folder {
+  width: 171px;
+  height: 40px;
+  min-width: 40px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #FFFFFF14;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.folder .folder-name {
+ 
+  font-family: Open Sans;
+font-size: 16px;
+font-weight: 600;
+line-height: 19.2px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.folder .delete-folder  {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.folder .delete img {
+  width: 16px;
+  height: 16px;
+}
+
+.typebot {
+  width: 225px;
+  height: 270px;
+  min-width: 40px;
+  padding: 80.2px 41.4px 80.21px 41.41px;
+  border-radius: 6px;
+  background: #1A5FFF;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.typebot .plus {
+  width: 40px;
+  height: 40px;
+}
+
+.typebot p {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.folders-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.folder-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.folder-item .folder-name {
+  flex-grow: 1;
+  font-family: Open Sans;
+font-size: 16px;
+font-weight: 600;
+line-height: 19.2px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  background: #18181B;
+  border: 1px solid #47474A;
+  box-shadow: 0px 0px 3.8px 0px #FFFFFF40;
+  border-radius: 24px;
+  width: 400px;
+  height: 211px;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.popup-content h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 27.33px;
+  font-weight: 600;
+  line-height: 41px;
+  margin-bottom: 20px;
+}
+
+.popup-content input {
+  width: 90%;
+  height: 41px;
+  background: #1F1F23;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 41px;
+  color: #A1A1A1;
+  margin-bottom: 20px;
+}
+
+.popup-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.popup-done,
+.popup-cancel {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  padding: 0 15px;
+  color: #4B83FF;
+}
+
+.popup-cancel {
+  color: white;
+}
+
+.line {
+  width: 1px;
+  height: 30px;
+  background: #47474A;
+  margin: 0 15px;
+}
+
+
+/* workspace code */
+.workspace-container {
+  position: relative;
+  display: inline-block;
+}
+
+.workspace {
+  display: flex;
+align-items: center;
+  font-size: 16px;
+}
+
+.dropdown-icon {
+  background: none;
+  border: none;
+  font-size: 14px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.dropdown-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 292px;
+  height: 143px;
+  background: linear-gradient(0deg, #121212, #121212),
+  linear-gradient(0deg, #18181B, #18181B);
+  border-radius: 6px ;
+  border: 1px solid #3D3D3F;
+  display: flex;
+  flex-direction: column;
+  opacity: 1; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdown-row {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #3D3D3F;
+  cursor: pointer;
+}
+
+.dropdown-row:last-child {
+  border-bottom: none;
+  color: #FFA54C;
+}
+
+
+

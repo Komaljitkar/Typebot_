@@ -1,0 +1,190 @@
+/* background: linear-gradient(0deg, #121212, #121212),
+linear-gradient(0deg, #171923, #171923),
+linear-gradient(0deg, #171923, #171923); */
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.home {
+    background: linear-gradient(0deg, #121212, #121212),
+    linear-gradient(0deg, #171923, #171923),
+    linear-gradient(0deg, #171923, #171923); 
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(0deg, #121212, #121212),
+    linear-gradient(0deg, #171923, #171923),
+    linear-gradient(0deg, #171923, #171923); /* Optional: Navbar background color */
+    width: 100%;
+height: 80px;
+top: 22px;
+left: 10px;
+padding-top: 10px;
+
+  }
+  .home .nav .left p {
+    font-size : 15px;
+    padding-top: 0px;
+    color: white;
+    font-weight: bold;
+  }
+  .sign {
+   border: 1px solid #7EA6FF;
+min-width: 40px;
+padding: 10.05px 17px 10.75px 17px;
+border-radius: 6px;
+background: transparent;
+color: #7EA6FF;
+cursor: pointer;
+font-weight: bold;
+  }
+  .Formbot-btn {
+    width: 170px;
+height: 40px;
+min-width: 40px;
+padding: 10.05px 16px 10.75px 16px;
+border-radius: 6px;
+background-color: #1A5FFF;
+color: white;
+cursor: pointer;
+font-weight: bold;
+
+  }
+  .nav .left {
+    display: flex;
+    gap: 10px;
+    padding-left: 80px;
+    align-items: center;
+  }
+    
+  .nav .right {
+    display: flex;
+    align-items: center;
+    padding-right: 80px;
+    gap: 10px;
+  }
+  
+  .Logo {
+    height: 35px;
+    width: 35px; 
+    cursor: pointer;
+  }
+
+
+  .main{
+    text-align: center;
+padding: 80px 220px 80px 220px;
+gap: 24px;
+  }
+
+  .main h1 {
+    font-family: Outfit;
+font-size: 60px;
+font-weight: 700;
+line-height:60px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+background: linear-gradient(90deg, #4B83FF 0%, #B794F4 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+background-clip: text;
+color: transparent;
+max-width: 1000px;
+padding: 0px 94.91px 0px 94.91px;
+  }
+
+  .main p {
+    font-family: Open Sans;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #FFFFFFEB;
+width: 772px;
+height: 60px;
+  }
+  .main .bot{
+    width: auto;
+    height: 22px;
+font-family: Open Sans;
+font-size: 18px;
+font-weight: 600;
+color: white;
+background: #1A5FFF;
+padding: 17px 32px 32px 32px;
+border-radius: 6px ;
+border: none;
+margin-top:15px;
+cursor: pointer;
+  }
+  .banner {
+    width: 980px;
+height: 686.51px;
+margin:10px;
+  }
+  .footer {
+    color: #FFFFFFEB;
+    display: flex;
+    justify-content: center;
+    width: Fixed (1,440px)px;
+height: Fixed (311px)px;
+top: 1557px;
+padding: 0px 220px 80px 220px;
+  }
+
+  .footer .logo1{
+    width: 30px;
+height: 30px;
+  }
+  .footer .lg {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+  }
+  .footer ul {
+    list-style-type: none;
+    width: Fixed (214px)px;
+height: Fill (190px)px;
+gap: 8px;
+opacity: 0px;
+padding-left: 60px;
+font-family: Open Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+
+text-decoration-style: solid;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+  }
+  .footer ul li {
+    padding-bottom: 8px;
+
+  }
+  .footer li:hover{
+    cursor:pointer;
+  }
+  .footer li h1 {
+    font-family: Outfit;
+font-size: 18px;
+font-weight: 500;
+line-height: 21.6px;
+color: #FFFFFFEB;
+
+
+  }
+
+.footer  .line {
+    text-decoration: underline;
+}
